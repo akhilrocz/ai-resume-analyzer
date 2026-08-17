@@ -10,7 +10,7 @@ import { prepareInstructions, AIResponseFormat } from '../../constants';
 
 const Upload = () => {
 
-    const { auth, isLoading, fs, ai, kv } = usePuterStore();
+    const { fs, ai, kv } = usePuterStore();
 
     const navigate = useNavigate();
 
@@ -83,7 +83,7 @@ const Upload = () => {
         console.log(data);
 
         navigate(`/resume/${uuid}`);
-    
+
     }
 
     const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
