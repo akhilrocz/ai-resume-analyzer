@@ -64,7 +64,7 @@ const Upload = () => {
             feedback: ''
         }
 
-        await kv.set(`resume: ${uuid}`, JSON.stringify(data));
+        await kv.set(`resume:${uuid}`, JSON.stringify(data));
 
         setStatusText("Analyzing...");
 
@@ -83,7 +83,7 @@ const Upload = () => {
         console.log(data);
 
         navigate(`/resume/${uuid}`);
-
+    
     }
 
     const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
