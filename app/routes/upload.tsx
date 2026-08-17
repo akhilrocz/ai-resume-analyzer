@@ -82,6 +82,8 @@ const Upload = () => {
 
         console.log(data);
 
+        navigate(`/resume/${uuid}`);
+
     }
 
     const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
